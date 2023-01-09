@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>java script</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+
+    *{
+      margin: 0%;
+			box-sizing: border-box;
+    }
+        
+      .line{
+            border: 0px solid black;
+            border-bottom: ;
+            box-shadow: 0 0 5px black;
+            background-color: rgba(180, 172, 172, 0.5);
+            float: right;
+            width: 29%;
+            height: 620px;
+      }
+
+        
+
+      .elbat{
+            margin-top: 102%;
+        }
+        .date{
+            border: 1px solid rgb(128, 116, 116);
+            border-radius: 1%;
+            height: 57px;
+            width: 2%;
+            padding: 0px;
+            border-radius: 10%;
+            background-color: rgb(250, 250, 250);
+        }
+        .date:hover{
+            background-color: rgb(250, 250, 250);
+            border-color: rgb(255, 255, 255);
+        }
+
+    
+
+      .btn {
+        margin-top: 0%;
+        height: 35px;
+        float: left;
+        background-color: rgba(236, 236, 236, 0.5);
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 1px 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    
+      .btn:hover {
+        background-color: rgb(156, 151, 151);
+      }
+   
+    </style>
+        <script>
+        function hideAll(){
+        document.getElementById('para2').style.display='block';
+        document.getElementById('button1').style.display='none';
+        document.getElementById('button2').style.display='block';
+        }
+        function showAll(){
+        document.getElementById('para2').style.display='none';
+        document.getElementById('button2').style.display='none';
+        document.getElementById('button1').style.display='block';
+        }
+        </script>
+    </head>
+      <body>            
+			
+				<div id="para2" class="line" style="display: none;">
+					<table class="elbat" cellspacing="5"> 
+						<tbody>
+							<tr>
+								<td class="date" style="background-color: purple; color: white;">1</td>
+								<td class="date"style="background-color: purple; color: white;">2</td>
+								<td class="date">3</td>
+								<td class="date">4</td>
+							</tr>
+							<tr>
+								<td class="date">5</td>
+								<td class="date">6</td>
+								<td class="date">7</td>
+								<td class="date">8</td>
+							</tr>
+							<tr>
+								<td class="date">9</td>
+								<td class="date">10</td>
+								<td class="date">11</td>
+								<td class="date">12</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+            <button id="button1" class="btn" type="button"
+            onclick="hideAll()">
+            <i class="fa fa-bars"></i>
+            </button>
+
+            <button id="button2" class="btn" type="button" style="display: none;"
+            onclick="showAll()">
+            <i class="fa fa-bars"></i>
+            </button>
+      </body>
+</html>

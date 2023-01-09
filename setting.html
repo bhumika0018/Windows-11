@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Setting</title>
+	<style>
+            *{
+              margin: 0%;
+            }
+            
+            .settd{
+                border: 1px solid white;
+                padding: 0px;
+				width: 260px;
+            }
+            .settd:hover{
+                border-color: black;
+            }
+            .image{
+               width:260px;
+            }
+			.yo{
+				margin-left: 37%;
+				margin-top: 3%;
+			} 
+            
+    </style>
+	<script>
+		function hidesetting(){
+		document.getElementById('setting').style.display='block';
+		document.getElementById('button5').style.display='none';
+		document.getElementById('button6').style.display='block';
+		}
+		function showsetting(){
+		document.getElementById('setting').style.display='none';
+		document.getElementById('button6').style.display='none';
+		document.getElementById('button5').style.display='block';
+		}
+	  </script>
+	</head>
+	<body>
+	<div id="setting" style="display: none;">
+		
+        <div style="background-color: rgb(236, 234, 234); height: 150px; padding: 5px;">
+            <h6>SETTINGS</h6>
+        </div>
+		<div >
+			<form>
+				<p class="yo"> 
+					<input type="text" name= "sreach" required placeholder="  Find a Setting                     🍭" style="width: 35%; height: 25px;">
+				</p>
+			</form>
+		<br>
+        </div>
+       
+		<table style="margin-left: 1%;">
+			<tr>
+				<td class="settd">  <img src="img1.jpeg" class="image"> </td>
+				<td class="settd">  <img src="img2.jpeg" class="image"> </td>
+				<td class="settd">  <img src="img3.jpeg" class="image"> </td>
+				<td class="settd">  <img src="img4.jpeg" class="image"> </td>
+				<td class="settd">  <img src="img5.jpeg" class="image"> </td>
+			</tr>
+			<tr>
+				<td class="settd"> <img src="img6.jpeg" class="image"> </td>
+				<td class="settd"> <img src="img7.jpeg" class="image"> </td>
+				<td class="settd"> <img src="img8.jpeg" class="image"> </td>
+				<td class="settd"> <img src="img9.jpeg" class="image"> </td>
+				<td class="settd"> <img src="img10.jpeg" class="image"> </td>
+			</tr>
+			<tr>
+				<td class="settd"> <img src="img11.jpeg" class="image"> </td>
+				<td class="settd"> <img src="img12.jpeg" class="image"> </td>
+				<td class="settd"> <img src="img13.jpeg" class="image"> </td>
+			</tr>
+		</table>
+	</div>
+
+	<button id="button5" class="btn" type="button" onclick="hidesetting()">
+		<img src="setting.png" height="20px" style=" margin-top: 4px;">
+	</button>
+
+	<button id="button6" class="btn" type="button" style="display: none;" onclick="showsetting()">
+		<img src="setting.png" height="20px" style=" margin-top: 4px;">
+	</button>
+
+	</body>
+</html>

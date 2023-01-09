@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+    <head>
+        <title>weather</title>
+        <style>
+            *{
+                margin: 0%;
+            }
+            
+            .weadesign{
+                background-color: rgba(221, 221, 221, 0.5);                height: 500px;
+                width: 40%;
+                height: 620px;
+                border-radius: 2%;
+                margin-top: 0.5%;
+                margin-left: 0.5%;
+            }
+            #clock{
+                font-size: 20px;
+                margin-left: 17%;
+                margin-top: 2%;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 500;
+            }
+
+            .inimages{
+                border: 1px solid black;
+                width: max-content;
+                margin-left: 2%;
+                border-radius: 3px;
+            }
+            .inimages:hover{
+                border-color: white;
+            }
+
+            button{
+                float: right;
+            }
+
+
+
+        </style>
+        <script>
+            function hideweather(){
+            document.getElementById('weather').style.display='block';
+            document.getElementById('button5').style.display='none';
+            document.getElementById('button6').style.display='block';
+            }
+            function showweather(){
+            document.getElementById('weather').style.display='none';
+            document.getElementById('button6').style.display='none';
+            document.getElementById('button5').style.display='block';
+            }
+        </script>
+    </head>
+    <body>
+
+        <div id="weather" class="weadesign" style="display: non;">
+            <table class="weatherdesign">
+                <thead>
+                    <tr>
+                        <td >
+                            <b style="width: 65px;">
+                              <div id="clock">8:10:45</div>
+                        
+                              <script>
+                                setInterval(showTime, 1000);
+                                function showTime() {
+                                  let time = new Date();
+                                  let hour = time.getHours();
+                                  let min = time.getMinutes();
+                                  let sec = time.getSeconds();
+                                  am_pm = "AM";
+                            
+                                  if (hour > 12) {
+                                    hour -= 12;
+                                    am_pm = "PM";
+                                  }
+                                  if (hour == 0) {
+                                    hr = 12;
+                                    am_pm = "AM";
+                                  }
+                            
+                                  hour = hour < 10 ? "0" + hour : hour;
+                                  min = min < 10 ? "0" + min : min;
+                                  sec = sec < 10 ? "0" + sec : sec;
+                                  
+                                  let currentTime = hour + ":"
+                                    + min + am_pm;    
+                                  document.getElementById("clock")
+                                    .innerHTML = currentTime;
+                                }
+                            
+                                showTime();
+                              </script>
+                          </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <br>
+                            <form action="">
+                                <p style="width: 1320px; margin-left: 2%;"> 
+                                  <input type="text" name= "sreach" placeholder="🍭 Type here to search the web" style="width: 35%; height: 25px;">
+                                </p>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <div class="inimages" >
+                                sdkgvks
+                            </div>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                
+            </table>
+
+        </div>
+
+        <button id="button5" class="btn" type="button" onclick="hideweather()">
+            <img src="start.png" height="20px" style=" margin-top: 4px;">
+        </button>
+
+        <button id="button6" class="btn" type="button" style="display: none;" onclick="showweather()">
+            <img src="start.png" height="20px" style=" margin-top: 4px;">
+        </button>
+
+
+
+
+
+    </body>
+
+</html>

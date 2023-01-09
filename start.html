@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <title>start</title>
+        <style>
+            {
+                background-color: rgb(121, 150, 202);
+            }
+            .startdesign{
+                background-color: rgba(221, 221, 221, 0.5);                height: 500px;
+                width: 50%;
+                margin-left: 25%;
+                margin-top: 5%;
+            }
+
+            .tabdesign{
+                padding: 20px;
+                border: 1px solid black;
+                width: 660px;
+                margin-left: 1%;
+                margin-top: ;
+            }
+
+            
+
+
+
+        </style>
+        <script>
+            function hidestart(){
+            document.getElementById('start').style.display='block';
+            document.getElementById('button1').style.display='none';
+            document.getElementById('button2').style.display='block';
+            }
+            function showstart(){
+            document.getElementById('start').style.display='none';
+            document.getElementById('button2').style.display='none';
+            document.getElementById('button1').style.display='block';
+            }
+        </script>
+    </head>
+    <body>
+
+        <div id="start" class="startdesign" style="display: none;">
+            <table class="tabdesign" >
+                <thead>
+                    <tr>
+                        <td>edge</td>
+                        <td>mail</td>
+                        <td>calender</td>
+                        <td>store</td>
+                        <td>photos</td>
+                        <td>setting</td>
+                    </tr>
+                </thead>
+            </table>
+            abc
+            <br>
+            abc
+
+
+        </div>
+
+        <button id="button1" class="btn" type="button" onclick="hidestart()">
+            <img src="start.png" height="20px" style=" margin-top: 4px;">
+        </button>
+
+        <button id="button2" class="btn" type="button" style="display: none;" onclick="showstart()">
+            <img src="start.png" height="20px" style=" margin-top: 4px;">
+        </button>
+
+
+
+
+
+    </body>
+
+</html>
